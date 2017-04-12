@@ -1,0 +1,29 @@
+{
+  "name": "lab3",
+  "version": "1.0.0",
+  "description": "3llab",
+  "main": "index.js",
+  "scripts": {
+    "start": "grunt",
+    "second": "eslint scripts/**.*js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https:/github.com/redrik234/JS.git"
+  },
+  "author": "artyom",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "grunt": "^1.0.1",
+    "grunt-cache-bust": "^1.5.0",
+    "grunt-connect": "^0.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-eslint": "^19.0.0",    
+    "grunt-open": "^0.2.3"
+  }
+}
