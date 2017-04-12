@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+	<head>
+        <meta charset="utf-8">
+        <title>Shape</title>
+        <link rel="stylesheet" href="build/bootstrap.min.ec3bb52a00e176a7.css">
+    </head>
+
+    <body>
+        <div class="container"">
+        	<div class="row navbar">
+        		<div class="col-md-4">
+        			<ul class="list-unstyled list-inline">
+        				<li class="col-md-4">
+        					<p class="text-center text-primary"> <big>Shape:</big></p>
+        				</li>
+        				<li class="col-md-6">
+        					<select id="shapes" class="form-control">
+					    		<option id="chooseShape">choose shape</option>
+					    		<option id="circle">circle</option>
+					    		<option id="triangle">triangle</option>
+					    		<option id="rectangle">rectangle</option>
+							</select>
+        				</li>
+        			</ul>                	
+        		</div>
+				<div class="col-md-4">
+					<ul class="list-unstyled list-inline">
+						<li class="col-md-4">
+							<p class="text-center text-primary"> <big>Fill Color:</big></p>
+						</li>
+						<li class="col-md-6">
+							<input type="text" id="fillColor" class="form-control">
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<ul class="list-unstyled list-inline">
+						<li class="col-md-4">
+							<p class="text-center text-primary"> <big>Border Color:</big></p>
+						</li>
+						<li class="col-md-6">
+							<input type="text" id="borderColor" class="form-control">
+						</li>
+					</ul>
+				</div>
+        	</div>
+
+            <div id="circleProperties" class="row">
+            	<ul class="list-unstyled list-inline col-md-offset-4">
+            		<li class="col-md-2">
+            			<span class="text-info">CenterX:</span>
+                    	<input type="text" class="form-control" value="250" id="cirX">	
+            		</li>
+            		<li class="col-md-2">
+            			<span class="text-info">CenterY:</span>
+                    	<input type="text" class="form-control" value="250" id="cirY">
+            		</li>
+            		<li class="col-md-2">
+            			<span class="text-info">Radius:</span>
+                    	<input type="text" class="form-control" value="50" id="cirR">
+            		</li>
+            	</ul>
+            </div>
+
+            <div id="triangleProperties">
+	            <div class="row">
+	            	<ul class="list-unstyled list-inline col-md-offset-4">
+	            		<li class="col-md-2">
+	            			<span class="text-info">X1:</span>
+	            			<input type="text" value="250" class="form-control" id="trX1">
+	            		</li>
+	            		<li class="col-md-2">
+	            			<span class="text-info">X2:</span>
+	            			<input type="text" value="100" class="form-control" id="trX2">
+	            		</li>
+	            		<li class="col-md-2">
+	            			<span class="text-info">X3:</span>
+	            			<input type="text" value="550" class="form-control" id="trX3">
+	            		</li>
+	            	</ul>
+	            </div>
+	            <div class="row">
+	            	<ul class="list-unstyled list-inline col-md-offset-4">
+	            		<li class="col-md-2">
+	            			<span class="text-info">Y1:</span>
+	            			<input type="text" value="250" class="form-control" id="trY1">
+	            		</li>
+	            		<li class="col-md-2">
+	            			<span class="text-info">Y2:</span>
+	            			<input type="text" value="350" class="form-control" id="trY2">
+	            		</li>
+	            		<li class="col-md-2">
+	            			<span class="text-info">Y3:</span>
+	            			<input type="text" value="550" class="form-control" id="trY3">
+	            		</li>
+	            	</ul>
+	            </div>
+            </div>
+
+            <div id="rectangleProperties">
+            	<div class="row">
+            		<ul class="list-unstyled list-inline col-md-offset-4">
+	            		<li>
+	            			<span class="text-info">X1:</span>
+	            			<input type="text" value="150" class="form-control" id="rectX1">
+	            		</li>
+	            		<li>
+	            			<span class="text-info">X2:</span>
+            				<input type="text" value="250" class="form-control" id="rectX2">
+	            		</li>
+            		</ul>
+            	</div>
+            	<div class="row">
+            		<ul class="list-unstyled list-inline col-md-offset-4">
+	            		<li>
+	            			<span class="text-info">Y1:</span>
+		            		<input type="text" value="250" class="form-control" id="rectY1">
+	            		</li>
+	            		<li>
+	            			<span class="text-info">Y2:</span>
+	            			<input type="text" value="350" class="form-control" id="rectY2">
+	            		</li>
+            		</ul>
+            	</div>
+            </div>
+            <div class="row">
+            	<div class="col-md-offset-2">
+            		<canvas height="800" width="800" id="canvas">Обновите браузер</canvas>
+            	</div>
+            </div>	
+        </div>
+
+		<script type="text/javascript" src="js/Shape.js"></script>
+		<script type="text/javascript" src="js/Circle.js"></script>
+		<script type="text/javascript" src="js/Triangle.js"></script>
+		<script type="text/javascript" src="js/Rectangle.js"></script>
+		<script type="text/javascript" src="js/Script.js"></script>
+    </body>
+</html>
