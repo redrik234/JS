@@ -7,10 +7,6 @@
     "start": "grunt",
     "second": "eslint scripts/**.*js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https:/github.com/redrik234/JS.git"
-  },
   "author": "artyom",
   "license": "ISC",
   "devDependencies": {

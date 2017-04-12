@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 		
     clean: 
 		{			
-			js: ['js/built.js'],
+			js: ['scripts/built.js'],
 			build: ['build/**'],	
 		},
 		
@@ -14,7 +14,7 @@ module.exports = function(grunt) {
     {
       options: 
       {
-        separator: ' \n'
+        separator: '\n'
       },
     
       dist: 
@@ -27,23 +27,14 @@ module.exports = function(grunt) {
 					,'js/Rectangle.js'
 					,'js/Script.js'
 				],
-        dest: 'js/built.js',
+        dest: 'scripts/built.js',
       },
     },
 
     eslint: 
     {
         target: ['js/built.js']
-    },
-		
-		// connect: 
-		// {						
-			// meta: 
-			// {
-				// port: 2000,
-				// base: ''
-			// }
-		// },  
+    },  
 		
 		connect:
 		{
@@ -137,19 +128,19 @@ module.exports = function(grunt) {
 	, 'eslint'
 	, 'copy:js'
 	, 'copy:css'
-	, 'copy:index'
 	, 'cacheBust'		
+	, 'copy:index'
 	, 'open'		
 	, 'connect'	
 	, 'watch'	
 	]);	
   
 	grunt.loadNpmTasks('grunt-contrib-copy');	
-  	grunt.loadNpmTasks('grunt-cache-bust');     
+  grunt.loadNpmTasks('grunt-cache-bust');     
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-open');	
 	grunt.loadNpmTasks('grunt-contrib-connect');		
-  	grunt.loadNpmTasks('grunt-contrib-clean');
-  	grunt.loadNpmTasks('grunt-contrib-concat');
-  	grunt.loadNpmTasks('grunt-eslint');   	
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-eslint');   	
 };
