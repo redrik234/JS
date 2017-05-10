@@ -7,8 +7,6 @@ var circle = new Circle();
 var triangle = new Triangle();
 var rectangle = new Rectangle();
 
-console.log("123")
-
 function GetTypeOfShape(currentShape)
 {
     var shape;
